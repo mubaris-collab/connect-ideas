@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Submit Idea | Connect Ideas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Connect Ideas</div>
+    <nav id="navbar">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="ideas.html">Ideas</a>
+      <a href="submit.html" class="active">Submit Idea</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h1>Submit Your Idea</h1>
+    <p class="muted">
+      Fill the form below to pitch your idea. It will appear in the ideas list after submission.
+    </p>
+
+    <form id="ideaForm" class="form-card">
+      <label>
+        Your Name*
+        <input type="text" id="name" placeholder="Your full name" />
+      </label>
+
+      <label>
+        Email*
+        <input type="email" id="email" placeholder="you@example.com" />
+      </label>
+
+      <label>
+        University / Organization*
+        <input type="text" id="university" placeholder="e.g., Bahria University" />
+      </label>
+
+      <label>
+        Idea Title*
+        <input type="text" id="title" placeholder="Project / Startup name" />
+      </label>
+
+      <label>
+        Idea Description (Problem + Solution + Impact)*
+        <textarea
+          id="description"
+          rows="5"
+          placeholder="Explain the problem, your solution, and expected impact..."
+        ></textarea>
+      </label>
+
+      <label>
+        Upload Supporting Document (optional)
+        <input type="file" id="document" />
+      </label>
+
+      <label>
+        Upload Image (optional)
+        <input type="file" id="image" accept="image/*" />
+      </label>
+
+      <button type="submit" class="btn">Submit Idea</button>
+      <p id="formMessage"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Connect Ideas | Empowering Student Innovation</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Connect Ideas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Connect Ideas</div>
+    <nav id="navbar">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="ideas.html">Ideas</a>
+      <a href="submit.html">Submit Idea</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h1>Contact Us</h1>
+    <p class="muted">
+      For project-related queries, collaborations, or feedback, use the form below.
+    </p>
+
+    <form id="contactForm" class="form-card">
+      <label>
+        Name*
+        <input type="text" id="contactName" placeholder="Your name" />
+      </label>
+
+      <label>
+        Email*
+        <input type="email" id="contactEmail" placeholder="you@example.com" />
+      </label>
+
+      <label>
+        Message*
+        <textarea id="contactMessage" rows="4" placeholder="Your message"></textarea>
+      </label>
+
+      <button type="submit" class="btn">Send Message</button>
+      <p id="contactMessageBox"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Connect Ideas | Empowering Student Innovation</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

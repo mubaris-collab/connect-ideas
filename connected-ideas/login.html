@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Connect Ideas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Connect Ideas</div>
+    <nav id="navbar">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="ideas.html">Ideas</a>
+      <a href="submit.html">Submit Idea</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html" class="active">Login</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h1>Login</h1>
+    <p class="muted">
+      This is a simple role-based login for demonstration (no real password system).
+    </p>
+
+    <form id="loginForm" class="form-card">
+      <label>
+        Full Name*
+        <input type="text" id="loginName" placeholder="Your name" />
+      </label>
+
+      <label>
+        Email*
+        <input type="email" id="loginEmail" placeholder="you@example.com" />
+      </label>
+
+      <fieldset class="role-fieldset">
+        <legend>Select Role*</legend>
+        <label>
+          <input type="radio" name="role" value="Idea Owner" /> Idea Owner
+        </label>
+        <label>
+          <input type="radio" name="role" value="Investor" /> Investor
+        </label>
+        <label>
+          <input type="radio" name="role" value="Admin" /> Admin
+        </label>
+      </fieldset>
+
+      <button type="submit" class="btn">Login</button>
+      <p id="loginMessage"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Connect Ideas | Empowering Student Innovation</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

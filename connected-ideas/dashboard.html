@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | Connect Ideas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">Connect Ideas</div>
+    <nav id="navbar">
+      <a href="index.html">Home</a>
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="ideas.html">Ideas</a>
+      <a href="submit.html">Submit Idea</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <section class="section" id="dashboardStats">
+    <h1>Dashboard</h1>
+    <p id="dashboardWelcome" class="muted"></p>
+
+    <div class="dashboard-cards">
+      <div class="stat-card">
+        <h3>Total Ideas</h3>
+        <p id="statTotalIdeas">0</p>
+      </div>
+      <div class="stat-card">
+        <h3>Pending Review</h3>
+        <p id="statPendingIdeas">0</p>
+      </div>
+      <div class="stat-card">
+        <h3>Shortlisted</h3>
+        <p id="statShortlistedIdeas">0</p>
+      </div>
+      <div class="stat-card">
+        <h3>Funded</h3>
+        <p id="statFundedIdeas">0</p>
+      </div>
+    </div>
+
+    <h2>Recent Ideas</h2>
+    <div id="recentIdeas" class="ideas-section"></div>
+
+    <h2>Admin – Manage Idea Status</h2>
+    <p class="muted">
+      Only visible functionally if you log in as <strong>Admin</strong>.
+    </p>
+    <div id="adminIdeas"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Connect Ideas | Empowering Student Innovation</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
